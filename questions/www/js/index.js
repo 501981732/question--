@@ -45,10 +45,12 @@ $('.questions').delegate('[question]', 'click', function () {
 })
 
 $.getJSON('/api/questions', null, function (res) {
+    console.dir(res)
     if (res.code != "success") {
         console.log(res.message);
         return;
     }
+    //3.使用模板引擎呈现
     var html = template("question", res);
     $('.questions').html(html)
 })

@@ -33,7 +33,7 @@
         
     </div>
 
-    <!--问题列表所用的模板-->
+    <!--2.1问题列表所用的模板-->
     <script id="question" type="text/html">
         {{each data as q}}
         <div class="media" question="{{q.fileName}}">
@@ -60,7 +60,7 @@
         {{/each}}
     </script>
 
-    <!--答案列表所用的模板-->
+    <!--2.2答案列表所用的模板-->
     <script id="asks" type="text/html">
         {{each answers as a}}
         <div class="media media-child">
@@ -85,6 +85,7 @@
     <script src="js/jquery-2.2.4.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.cookie.js"></script>
+    <!--1.引入模板脚本-->
     <script src="js/template.js"></script>
     <script src="js/index.js"></script>
 </body>
